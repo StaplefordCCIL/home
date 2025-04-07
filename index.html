@@ -11,6 +11,11 @@
             color: white;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure the body takes the full height of the viewport */
+            flex-direction: column;
         }
         header {
             background-color: darkslategray;
@@ -19,6 +24,7 @@
             font-size: 1.8em; /* Increased font size by 20% */
             color: gold; /* Text color changed to gold */
             font-weight: bold; /* Text set to bold */
+            margin-bottom: 20px;
         }
         /* Scrolling Banner Styles */
         .scrolling-banner {
@@ -43,6 +49,25 @@
                 transform: translateX(-100%);
             }
         }
+
+        /* Button Styles */
+        .button {
+            background-color: gold;
+            border: none;
+            color: black;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2em;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: darkgoldenrod;
+        }
     </style>
 </head>
 <body>
@@ -56,6 +81,8 @@
             Latest Results | 06/04/2025 | vs Nottingham A - Loss 8-13, vs Pheonix Masters - Loss 9-12, vs Sun Valley - Loss 9-12
         </div>
     </div>
-    
+
+    <!-- Centered Hyperlink Button -->
+    <a href="https://staplefordccil.github.io/team-list/" class="button" target="_blank">Team Listing 2025</a>
 </body>
 </html>
